@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Fatimah Nur Abdillah</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Fatimah Nur Abdillah</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="about.html" class="active">👤 About Me</a>
+    </nav>
+  </header>
+
+  <section class="about white-bg">
+    <h2>About Me</h2>
+    <p>
+        Undergraduate student at <b>IPB University</b>, majoring in Artificial Intelligence, class of 2024.  
+        Currently enjoying my academic journey while diving deeper into the world of AI.  
+        Beyond lectures, I keep myself busy with various campus activities that add more colors to my days,  
+        such as <b>Ormawa Eksekutif PKU</b>, <b>Passion x Fesma</b>, <b>Agrisymphony 2025</b>, and <b>Seri X Art</b>.  
+    </p>
+    <p>
+        I love cooking, listening to music, and dancing—three things that never fail to lift up my mood.  
+        People often say I’m a chill person; even when I’m mad or stressed out, I usually manage to stay calm 🌿  
+    </p>
+    <p>
+        My life vision is simple: to become the best among the best, while constantly improving myself.  
+        I aim to always keep up with the fast-changing world 🚀  
+        and take part in the positive changes happening around us.  
+    </p>
+
+    <!-- Foto biografi -->
+    <div class="bio-foto">
+      <img src="images/bio 1.jpg" alt="Foto Bio 1">
+      <img src="images/bio 3.jpg" alt="Foto Bio 2">
+      <img src="images/bio 2.jpg" alt="Foto Bio 3">
+    </div>
+  </section>
+
+  <section class="kegiatan-section cherry-pattern">
+    <h2>Kegiatanku</h2>
+    <div class="kegiatan-menu">
+      <button onclick="showKegiatan('ormawa')">Ormawa Eksekutif PKU 2024/2025</button>
+      <button onclick="showKegiatan('fesma')">Passion x Fesma 2025</button>
+      <button onclick="showKegiatan('agrisymphony')">Agrisymphony 2025</button>
+      <button onclick="showKegiatan('serixart')">Seri X Art 2025</button>
+    </div>
+
+    <div id="ormawa" class="kegiatan">
+      <h3>Ormawa Eksekutif PKU 2024/2025</h3>
+      <p>
+        Staff Ormawa Eksekutif PKU Departemen Seni Budaya. Pada Departemen Seni Budaya, aku memegang program kerja Harmoni Nusantara sebagai sekretaris. Harmoni Nusantara terdiri dari berbagai program yaitu sehari berbatik, indonesians fun fact, dan wall of culture.
+      </p>
+      <img src="images/ekse 1.jpg" alt="Ormawa">
+      <img src="images/ekse 2.jpg" alt="Ormawa">
+      <img src="images/ekse 3.jpg" alt="Ormawa">
+    </div>
+
+    <div id="fesma" class="kegiatan">
+      <h3>Passion x Fesma 2025</h3>
+      <p>
+        Kegiatan Passion X Fesma merupakan kegiatan kolaborasi mega program kerja berupa kompetisi di bidang olahraga dan seni serta apresiasi 
+        yang diselenggarakan oleh Departemen Akademik Prestasi, Departemen Pemuda Olahraga, dan Departemen Seni Budaya Ormawa Eksekutif PKU IPB Periode 2024/2025
+      </p>
+      <img src="images/pasma 1.jpg" alt="Fesma">
+      <img src="images/pasma 2.jpg" alt="Fesma">
+    </div>
+
+    <div id="agrisymphony" class="kegiatan">
+      <h3>Agrisymphony 2025</h3>
+      <p>Agrisymphony merupakan rangkaian Dies Natalies IPB yang terbuka untuk umum. Aku menjadi sekretaris Divisi Operasional yang mengurus tentang vanue dan pengadaan barang.</p>
+      <img src="images/agsn 1.jpg" alt="Agrisymphony">
+      <img src="images/agsn 2.jpg" alt="Agrisymphony">
+      <img src="images/agsn 3.jpg" alt="Agrisymphony">
+    </div>
+
+    <div id="serixart" class="kegiatan">
+      <h3>Seri X Art</h3>
+      <p>SERI X ART EXHIBITION adalah gabungan dari dua kegiatan, yaitu Selebrasi Hari IPB dan PKU ART EXHIBITION. Pada kegiatan ini aku menjadi sekretaris sekaligus stage manager Divisi Acara.</p>
+      <img src="images/sxa 1.jpg" alt="Seri X Art">
+      <img src="images/sxa 2.jpg" alt="Seri X Art">
+    </div>
+  </section>
+
+  <!-- FIXED SCRIPT -->
+  <script>
+    function showKegiatan(id) {
+      document.querySelectorAll('.kegiatan').forEach(el => {
+        el.classList.remove('active');
+      });
+      setTimeout(() => {
+        document.getElementById(id).classList.add('active');
+      }, 100);
+    }
+  </script>
+</body>
+</html>
